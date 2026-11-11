@@ -7,6 +7,7 @@ figure;
 hold on;
 axis equal;
 grid on;
+title('3D Track Path Generation');
 
 plot3(track.coords(1,:), track.coords(2,:), track.coords(3,:), 'k', 'LineWidth', 2)
 
@@ -19,6 +20,7 @@ plot3(outer.offset_outer_new2(1,:), outer.offset_outer_new2(2,:), outer.offset_o
 plot3(offset_geometry.track_upper(1,:), offset_geometry.track_upper(2,:), offset_geometry.track_upper(3,:), 'k', 'LineWidth', 2)
 plot3(inner.offset_track_inner_upper(1,:), inner.offset_track_inner_upper(2,:), inner.offset_track_inner_upper(3,:), 'b-', 'LineWidth', 2)
 plot3(outer.offset_track_outer_upper(1,:), outer.offset_track_outer_upper(2,:), outer.offset_track_outer_upper(3,:), 'r-', 'LineWidth', 2)
+
 
 view(3);
 
